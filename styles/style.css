@@ -1,0 +1,71 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Declaración de variables */
+:root {
+    --card-background: hsl(0, 0%, 100%);
+    --body-background: hsl(212, 45%, 89%);
+    --paragraph-color: hsl(220, 15%, 55%);
+    --title-color: hsl(218, 44%, 22%);
+    --text-font-family: 'Outfit', sans-serif;
+    --paragraph-font-weight: 400;
+    --title-font-weight: 700;
+    --paragraph-font-size: 15px;
+}
+
+/* Normalización del padding y margin en todo el documento */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos del body */
+body {  
+    background-color: var(--body-background);
+}
+
+
+.container-card {
+    background-color: var(--card-background);
+    width: 275px;
+    padding: 15px;
+    margin: 32px auto;
+    border-radius: 25px;
+}
+
+div > img {
+    display: block;
+    border-radius: 25px;
+    width: 95%;
+    margin: 10px auto 0;
+}
+
+.text-container {
+    padding: 0 15px;
+}
+
+div > h1 {
+    margin: 20px auto 0;
+    text-align: center;
+    font-family: var(--text-font-family);
+    color: var(--title-color);
+    font-weight: var(--title-font-weight);
+    font-size: 1.3em;
+}
+
+div > p {
+    margin: 18px auto 20px;
+    text-align: center;
+    font-family: var(--text-font-family);
+    color: var(--paragraph-color);
+    font-weight: var(--paragraph-font-weight);
+    font-size: var(--paragraph-font-size);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
